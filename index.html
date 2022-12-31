@@ -57,7 +57,7 @@ canvas {
 
 
 <style>
-    body {
+  body {
 	background: #000;
 	margin: 0;
 }
@@ -363,8 +363,8 @@ body {
   left: 0;
 }
 .wish {
-	position: sticky;
-	margin-top: -305px;
+    position: absolute;
+    bottom: 60px;
 	font-family: myfont;
 
 }
@@ -475,9 +475,9 @@ body {
 	var name=prompt("Please enter your name", "Name");
 	if (name != null) {
 
-        var wisher = "HoanDev";
+        var wisher = "";
         document.getElementById("wish").innerHTML =
-        "<br><br>Hi <i style=' font-style: italic; '>" + name + "</i><br>"+wisher+" Wishes You Happy New Year ❤️ ";
+        "<br><br>Hi <i style=' font-style: italic; '>" + name + "</i><br>"+wisher+"Happy New Year ❤️ ";
         
       }
       else
@@ -511,7 +511,7 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML ="In Advance <br>" +days + " Days " + hours + " Hours "
+    document.getElementById("demo").innerHTML ="<br>" +days + " Days " + hours + " Hours "
     + minutes + " Minutes " + seconds + " Seconds";
     
     // If the count down is over, write some text 
